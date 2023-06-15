@@ -30,7 +30,7 @@ const orderedList = document.getElementById("todo-list");
 const populateTodos = () => {
   for (let i = 0; i < arrayOfTodos.length; i++) {
     const item = document.createElement("li");
-    const textNode = document.createTextNode(arrayOfTodos[i].userId);
+    const textNode = document.createTextNode(arrayOfTodos[i].title);
     item.appendChild(textNode);
     // console.log(item);
     orderedList.appendChild(item);
