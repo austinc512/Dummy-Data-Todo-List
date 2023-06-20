@@ -3,14 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAZZ5EAAAAAACuIugBEmccAJZHMABhzowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERETMzERERERFVRDMzERERFVVUQzMxEREVVVRDMzERERERERERERERAAIlVURDEREAAiVVREMREQAAIlVUQxEREAACJVVREREQAAAiVVEREREAAAJVEREREREAAhERERERERERERERERERERERERH//wAA//8AAPw/AADwDwAA4AcAAOAHAACAAQAAQAIAAEACAACAAQAA4AcAAOAHAADwDwAA/D8AAP//AAD//wAA"
+      rel="icon"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+
     <title>Dummy-Data-Todo</title>
   </head>
   <body>
     <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
     <button onclick="populateTodos()">Populate Todos</button>
+    <button id="clear">clear</button>
+    <p>&nbsp;</p>
+    <label for="testNumber">Input a number between 1 - 10</label>
+    <input type="number" name="test-num" id="testNumber" min="1" max="10" />
+    <button type="submit" id="submit-button">
+      populate num filtered todos
+    </button>
+
+    <button id="completed">filter for completed</button>
     <ol id="todo-list">
       <!-- LIs will go here -->
     </ol>
